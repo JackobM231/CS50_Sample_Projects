@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Bought
+{% endblock %}
+
+{% block main %}
+
+<table>
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Company's Name</th>
+            <th>Cost of share</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>After operation</th>
+            <th>Transaction date</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for row in main_table %}
+        <tr>
+            <td>{{row.symbol}}</td>
+            <td>{{row.name}}</td>
+            <td>{{usd(row.cost)}}</td>
+            <td>{{row.shares_num}}</td>
+            <td>{{usd(row.price_sum)}}</td>
+            <td>{{usd(row.total)}}</td>
+            <td>{{row.time}}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+<form action="/">
+    <button class="btn btn-primary" type="submit">To home page</button>
+</form>
+
+
+
+{% endblock %}
+
+

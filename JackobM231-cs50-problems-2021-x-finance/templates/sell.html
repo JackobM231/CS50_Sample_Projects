@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <div class="form-group">
+              <select name="symbol">
+                {% for row in main_table %}
+                <option>{{row.symbol}}</option>
+                {% endfor %}
+              </select>
+        <div class="form-group">
+            <br>
+            <input autocomplete="off" autofocus class="form-control" name="shares" placeholder="Shares" type="number" min="0">
+        </div>
+        <button class="btn btn-primary" type="submit">Sell</button>
+    </form>
+    <br><br>
+    <h3>Cash available: {{usd(cash)}}</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Company's Name</th>
+                <th>Number of shares</th>
+                <th>Current price for one share</th>
+                <th>Current price for all shares</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for row in main_table %}
+        {% if not row.shares_num == 0 %}
+            <tr>
+                <td>{{row.symbol}}</td>
+                <td>{{row.name}}</td>
+                <td>{{row.shares_num}}</td>
+                <td>{{usd(row.current_value)}}</td>
+                <td>{{usd(row.shares_value)}}</td>
+            </tr>
+        {% endif %}
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

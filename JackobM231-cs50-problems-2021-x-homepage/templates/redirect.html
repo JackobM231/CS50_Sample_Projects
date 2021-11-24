@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block style %}
+<link rel="stylesheet" href="static/style.css">
+<link rel="stylesheet" href="static/style.css">
+<style>
+  .header {
+    height: 0px;
+    background-image: none;
+  }
+
+  img {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 160px;
+    display:block;
+  }
+</style>
+{% endblock %}
+
+{% block title %} Redirection page {% endblock %}
+
+{% block navbar %}
+<li class="nav-item">
+  <a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/projects">Projects</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/about">About</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link active"  aria-current="page" href="/contact">Contact</a>
+</li>>
+{% endblock %}
+
+{% block body %}
+<h3 style="text-align:center">REDIRECTION PAGE</h3>
+<br>
+<img src="https://media1.giphy.com/media/2w4PHAh96lQKHDrhb0/giphy.gif?cid=ecf05e47y8d2dfgwvcbnjss9qu38a8aeh797s1tan7cvbng1&rid=giphy.gif&ct=g">
+{% endblock %}

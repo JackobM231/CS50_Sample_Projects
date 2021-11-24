@@ -1,0 +1,140 @@
+.header {
+  height: 950px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(main.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 150px;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
+}
+ 
+.home {
+  color: #fff;
+  letter-spacing: 10px;
+}
+
+.home > h1 {
+  font-size: 60px;
+  padding-top: 300px;
+  text-align: center;
+}
+
+.home > p {
+  margin-top: 300px;
+  word-spacing: 10px;
+  text-align: center;
+  animation-duration: 3s;
+}
+
+.row {
+  color: #212529;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px;
+  line-height: 140%;
+}
+
+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary:visited,
+.btn-secondary:focus {
+  background-color: #212529 !important;
+  border-color: #212529 !important;
+}
+
+.btn-secondary:hover {
+  background-color: #616060 !important;
+  border-color: #616060 !important;
+}
+
+.article {
+  margin-top: 70px;
+  margin-bottom: 140px;
+}
+
+.divider {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+.section {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.quick-heading {
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  line-height: 140%;
+  color: #212529;
+}
+
+.figure {
+  margin-bottom: 140px;
+  max-width: 100%;
+  height: auto;
+}
+
+.row > .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+.row > .col-lg-4 > p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.footer {
+  padding-top: 100px;
+  background-color: #212529;
+  text-align: center;
+}
+
+.footer > .row {
+  color: #fff;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  line-height: 140%;
+  width:100%;
+}
+
+.foot {
+  margin-bottom: 60px;
+}
+
+.link-secondary,
+.link-secondary:active,
+.link-secondary:visited,
+.link-secondary:focus {
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  line-height: 140%;
+  text-decoration: none;
+}
+
+.link-secondary:hover {
+text-decoration-line: none;
+color: #fff !important; 
+}
+
+.col-md-10 {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.445);
+  margin-bottom: 15px;
+}
+
+.col-md-2 {
+  text-align: right;
+}
+
+.form-group {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

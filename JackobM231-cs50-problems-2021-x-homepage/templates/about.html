@@ -1,0 +1,201 @@
+{% extends "layout.html" %}
+
+{% block style %}
+<link rel="stylesheet" href="static/style.css">
+<style>
+  .header {
+    height: 950px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(static/office.jpg);
+  }
+</style>
+{% endblock %}
+
+{% block title %} Something about us {% endblock %}
+
+{% block navbar %}
+<li class="nav-item">
+  <a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/projects">Projects</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="/about">About</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/contact">Contact</a>
+</li>>
+{% endblock %}
+
+{% block header %}
+<div class="home">
+  <h1>SOMETHING ABOUT US</h1>
+</div>
+{% endblock %}
+
+{% block body %}
+  <div class="container-fluid">
+    <div class="section">
+      <div class="row g-0">
+        <div class="col-md-4 offset-md-1">
+          <div class="quick-heading"><b>What did we build over the last ten years?</b></div>
+        </div>
+        <div class="col-md-5 offset-md-1">
+        </p>
+        Integer condimentum sit amet tortor et feugiat.
+        Mauris ultricies mollis nibh, nec bibendum purus rhoncus ut. Nulla vestibulum ex ornare orci imperdiet iaculis.
+        </p>
+        <p>
+        Mauris dignissim fringilla magna a consectetur. Duis sed eros vel diam efficitur consequat in quis tortor. 
+        Nulla id nunc malesuada, vestibulum mauris ut, euismod lorem.
+        </p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="article">
+      <div class="row g-0">
+        <div class="col-md-12">
+          <div class="quick-heading"><b>Our team</b></div>
+        </div>
+      </div>
+      <br><br><br>
+
+      <div class="section">
+        <div class="row g-0">
+          <div class="col-md-4 offset-md-1">
+            <h1><b>Robbie Donovan</b></h1>
+            <h2>Managing Director</h2>
+            <br>
+            <p>
+              Sed egestas lorem porttitor sem tristique pellentesque. Donec tristique pellentesque lorem at molestie.
+              Donec eget venenatis ligula, et luctus libero.
+              Etiam eget tellus gravida, consequat mi eu, bibendum velit.
+            </p>
+            <p>
+              Duis vel vestibulum libero. Pellentesque urna tortor, dignissim sit amet mauris non, consequat varius erat.
+              Etiam risus sapien, rhoncus vitae lobortis vitae, fermentum aliquet sapien. Nulla facilisi.
+              Maecenas sed gravida leo, nec pretium massa.
+            </p>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <figure class="figure">
+              <img src="static/person_1.jpg" class="figure-img img-fluid rounded" alt="Managing Director image">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row g-0">
+          <div class="col-md-5 offset-md-1 order-2">
+            <figure class="figure">
+              <img src="static/person_2.jpg" class="figure-img img-fluid rounded" alt="Operations Manager image">
+            </figure>
+          </div>
+          <div class="col-md-4 offset-md-1 order-1">
+            <h1><b>Emiko Yakotako</b></h1>
+            <h2>Operations Manager</h2>
+            <br>
+            <p>
+              Quisque et lorem et diam iaculis dapibus ac sed turpis. Donec tristique pellentesque lorem at molestie.
+              Donec eget venenatis ligula, et luctus libero.
+              Etiam eget tellus gravida, consequat mi eu, bibendum velit.
+              Etiam risus sapien, rhoncus vitae lobortis vitae, fermentum aliquet sapien. Nulla facilisi.
+              Maecenas sed gravida leo, nec pretium massa.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="row g-0">
+          <div class="col-md-4 offset-md-1">
+            <h1><b>Codey Mcpherson</b></h1>
+            <h2>Designer</h2>
+            <br>
+            <p>
+              Etiam risus sapien, rhoncus vitae lobortis vitae, fermentum aliquet sapien.
+              Sed egestas lorem porttitor sem tristique pellentesque. Donec tristique pellentesque lorem at molestie.
+              Donec eget venenatis ligula, et luctus libero.
+              Duis vel vestibulum libero. Pellentesque urna tortor, dignissim sit amet mauris non, consequat varius erat.
+              Etiam eget tellus gravida, consequat mi eu, bibendum velit.
+            </p>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <figure class="figure">
+              <img src="static/person_4.jpg" class="figure-img img-fluid rounded" alt="Designer image">
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="row g-0">
+          <div class="col-md-5 offset-md-1 order-2">
+            <figure class="figure">
+              <img src="static/person_3.jpg" class="figure-img img-fluid rounded" alt="Designer image">
+            </figure>
+          </div>
+          <div class="col-md-4 offset-md-1 order-1">
+            <h1><b>Adrianna Munro</b></h1>
+            <h2>Designer</h2>
+            <br>
+            <p>
+              Phasellus id ligula in augue varius ultrices a vel enim. Ut vel nulla erat.
+              Nam sed aliquet arcu. Donec dictum fermentum fringilla.
+              Etiam eget tellus gravida, consequat mi eu, bibendum velit.
+              Morbi ullamcorper, magna id cursus imperdiet, risus sapien convallis enim, in dignissim ligula quam ac mauris.
+              Sed ac volutpat quam. Donec dictum fermentum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="row g-0">
+          <div class="col-md-4 offset-md-1">
+            <h1><b>Hywel Mcbride</b></h1>
+            <h2>Designer</h2>
+            <br>
+            <p>
+              Etiam risus sapien, rhoncus vitae lobortis vitae, fermentum aliquet sapien. 
+              Sed egestas lorem porttitor sem tristique pellentesque.
+              Suspendisse posuere nibh non pretium imperdiet. Donec tristique pellentesque lorem at molestie.
+              Donec eget venenatis ligula, et luctus libero.
+              Etiam eget tellus gravida, consequat mi eu, bibendum velit.
+            </p>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <figure class="figure">
+              <img src="static/person_5.jpg" class="figure-img img-fluid rounded" alt="Designer image">
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="row g-0">
+          <div class="col-md-5 offset-md-1 order-2">
+            <figure class="figure">
+              <img src="static/person_6.jpg" class="figure-img img-fluid rounded" alt="Designer image">
+            </figure>
+          </div>
+          <div class="col-md-4 offset-md-1 order-1">
+            <h1><b>Benn Briggs</b></h1>
+            <h2>Designer</h2>
+            <br>
+            <p>
+              Quisque et lorem et diam iaculis dapibus ac sed turpis. Donec tristique pellentesque lorem at molestie.
+              Donec eget venenatis ligula, et luctus libero.
+              Etiam eget tellus gravida, consequat mi eu, bibendum velit.
+              Etiam risus sapien, rhoncus vitae lobortis vitae, fermentum aliquet sapien. Nulla facilisi.
+              Maecenas sed gravida leo, nec pretium massa.
+            </p>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
+{% endblock %}

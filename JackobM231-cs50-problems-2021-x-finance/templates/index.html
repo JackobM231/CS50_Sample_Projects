@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Status
+{% endblock %}
+
+{% block main %}
+
+<table>
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Company's Name</th>
+            <th>Number of shares</th>
+            <th>Current price for one share</th>
+            <th>Cost incurred for all shares</th>
+            <th>Current price for all shares</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for row in main_table %}
+    {% if not row.shares_num == 0 %}
+        <tr>
+            <td>{{row.symbol}}</td>
+            <td>{{row.name}}</td>
+            <td>{{row.shares_num}}</td>
+            <td>{{usd(row.current_value)}}</td>
+            <td>{{usd(row.price_sum)}}</td>
+            <td>{{usd(row.shares_value)}}</td>
+        </tr>
+    {% endif %}
+    {% endfor %}
+    </tbody>
+</table>
+
+<br>
+
+<table>
+    <thead>
+        <tr>
+            <th>Avilable cash</th>
+            <th>Value of all shares</th>
+            <th>Sum</th>
+        <tr>
+    <thead>
+    <tbody>
+        <tr>
+            <th>{{usd(cash)}}</th>
+            <th>{{usd(total)}}</th>
+            <th>{{usd(cash + total)}}</th>
+        </tr>
+
+    </tbody>
+</table>
+
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-lg-2">
+            <p><a class="btn btn-primary" href="/quote" method="get">Quote</a></p>
+        </div>
+        <div class="col-lg-2">
+            <p><a class="btn btn-primary" href="/buy" method="get">Buy</a></p>
+        </div>
+        <div class="col-lg-2">
+            <p><a class="btn btn-primary" href="/sell" method="get">Sell</a></p>
+        </div>
+        <div class="col-lg-2">
+            <p><a class="btn btn-primary" href="/history" method="get">History</a></p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+

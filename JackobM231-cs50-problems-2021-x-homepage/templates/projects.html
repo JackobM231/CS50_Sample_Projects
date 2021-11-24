@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block style %}
+<link rel="stylesheet" href="static/style.css">
+<style>
+  .header {
+    height: 950px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(static/projects.jpg);
+  }
+
+  .row {
+  --bs-gutter-x: 5px !important;
+  }
+
+  .col img {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    vertical-align: middle;
+  }
+</style>
+{% endblock %}
+
+{% block title %} Projects {% endblock %}
+
+{% block navbar %}
+<li class="nav-item">
+  <a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="/projects">Projects</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link"href="/about">About</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/contact">Contact</a>
+</li>>
+{% endblock %}
+
+{% block header %}
+<div class="home">
+  <h1>PROJECTS</h1>
+  <p class="animate__animated animate__fadeIn">To see the full catalogue of our projects please contact us</p>
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+  <div class="section">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="quick-heading"><b>Our latest projects</b></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+      <br>
+      <p>
+      Integer condimentum sit amet tortor et feugiat.
+      Mauris ultricies mollis nibh, nec bibendum purus rhoncus ut. Nulla vestibulum ex ornare orci imperdiet iaculis.
+      </p>
+      <p>
+      Mauris dignissim fringilla magna a consectetur. Duis sed eros vel diam efficitur consequat in quis tortor. 
+      Nulla id nunc malesuada, vestibulum mauris ut, euismod lorem.
+      </p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="col-md-10 offset-md-1">
+      <div class="row row-cols-1 row-cols-sm-2"> 
+        <div class="col">
+          <img src="static/project_1.jpg">
+          <img src="static/project_2.jpg">
+          <img src="static/project_3.jpg">
+          <img src="static/project_4.jpg">
+          <img src="static/project_5.jpg">
+          <img src="static/project_6.jpg">
+          <img src="static/project_7.jpg"> 
+        </div>
+        <div class="col">
+          <img src="static/project_8.jpg">
+          <img src="static/project_9.jpg">
+          <img src="static/project_10.jpg">
+          <img src="static/project_11.jpg">
+          <img src="static/project_12.jpg"> 
+          <img src="static/project_13.jpg">
+          <img src="static/project_15.jpg"> 
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
